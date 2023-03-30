@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <section id="menu">
+        <div class="menu__f">
+        <div class="logo">
+            <img src="images\citilogo.png" alt="">
+        </div>
+        <div class="items">
+            <li><i class="uil uil-apps"><a href="index.html">Overview</a></i></li>
+            <li><i class="uil uil-wallet"><a href="accounts.html">Accounts</a></i></li>
+            <li><i class="uil uil-transaction"><a href="transaction.html">Transactions</a></i></li>
+            <form class="main-form" role="search" action="#">
+                  <button class="btn" type="submit"><i class="uit uit-signout"></i><h3>Log Out</h3>
+                  </button>
+                  </form>
+        </div>
+    </div>
+     </section>
+     <section id="interface">
+        <div class="interface__i">
+          <div class="interface_left">
+              <h1 class="i-name-m">Hello Jasmine</h1> 
+          </div> 
+          <div class="interface_right">
+              <i id="menu__btn" class="uil uil-bars"></i>
+          </div>  
+  </div>
+        <h3 class="i-name">
+            Accounts Balance
+        </h3>
+        <h4>Please Provide Your Account Details</h4>
+        <div class="mail__1">
+            <div class="mail__top">
+                    <div class="form-element mb-3">
+                      <p>Account Holder’s Name</p>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" w-659 placeholder="type here">
+                      </div>
+                    <div class="form-element mb-3">
+                      <p>Account Number</p>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+            </div>
+            <div class="mail__top">
+                    <div class="form-element mb-3">
+                        <p>Bank Name</p>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" w-659 placeholder="type here">
+                        </div>
+                      <div class="form-element mb-3">
+                        <p>IFSC of the Branch</p>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+            </div>
+            <form class="btn__main" action="#">
+                <button class="btn__acc" type="submit"><h3>Save Bank Details</h3></button>
+            </form>
+        </div>
+     </section>
+</body>
+</html>
