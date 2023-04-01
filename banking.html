@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body class="body__dashboard">
+     <section id="menu">
+        <div class="menu__f">
+        <div class="logo">
+            <img src="images\citilogo.png" alt="">
+        </div>
+        <div class="items">
+            <li><i class="uil uil-apps"><a href="index.html">Overview</a></i></li>
+            <li><i class="uil uil-wallet"><a href="accounts.html">Accounts</a></i></li>
+            <li><i class="uil uil-transaction"><a href="transaction.html">Transactions</a></i></li>
+            <form class="main-form" role="search" action="#">
+            <button class="btnd" type="submit"><i class="uit uit-signout"></i><h3>Log Out</h3>
+            </button>
+            </form>
+        </div>
+    </div>
+     </section>
+     <section id="interface">
+        <div class="interface__i">
+          <div class="interface_left">
+              <h1 class="i-name-m">Banking</h1> 
+          </div> 
+          <div class="interface_right">
+              <i id="menu__btn" class="uil uil-bars"></i>
+          </div>  
+  </div>
+        <h3 class="i-name">
+            Account Details- anikdhar@gmail.com
+        </h3>
+        <h4>Set Amounts</h4>
+        <div class="mail__d">
+            <form action="#">
+            <div class="mail__topd">
+                    <div class="mail__form">
+                      <p class="left_text">Allotted Amount</p>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" w-659 placeholder="type here">
+                      </div>
+                    <div class="mail__form">
+                      <p>Locked Amount</p>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+            </div>
+            <div class="mail__topd">
+                    <div class="mail__form">
+                        <p>Available to Withdrawal</p>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" w-659 placeholder="type here">
+                        </div>
+                      
+            </div>
+                <button class="btn__acc btn__main" type="submit"><h3>Save</h3></button>
+            </form>
+        </div>
+     </section>
+     <script>
+        $('#menu__btn').click(function(){
+            $('#menu').toggleClass("active");
+        })
+     </script>
+</body>
+</html>
